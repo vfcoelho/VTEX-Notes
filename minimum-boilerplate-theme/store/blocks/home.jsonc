@@ -5,7 +5,8 @@
       "info-card#button-right",
       "info-card#button-left",
       "search-result-layout.customQuery#home",
-      "flex-layout.row"
+      "flex-layout.row",
+      "slider-layout#home"
     ]
   },
   "rich-text": { 
@@ -106,6 +107,7 @@
     ]
   },
   //SEARCH RESULT ^^^^^^^^^^^^^^^^^^^^^^^^
+  //FLEX LAYOUT vvvvvvvvvvvvvvvvvvvvvvvvv
   "flex-layout.row":{
     "children": [
       "info-card#rethink",
@@ -139,4 +141,7 @@
       "maxWidth": "100%"
     }
   }
+  //FLEX LAYOUT ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 }
