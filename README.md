@@ -7,6 +7,8 @@
 
 ⭐ [Docs](https://vtex.io/docs)
 
+⭐ [Changelog](https://developers.vtex.com/changelog)
+
 ⭐ [CLI](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/)
 
 ⭐ [Components](https://vtex.io/docs/components/all)
