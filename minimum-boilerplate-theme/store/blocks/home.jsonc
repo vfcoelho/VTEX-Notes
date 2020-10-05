@@ -1,6 +1,15 @@
 {
   "store.home": { 
     "blocks": [
+      "rich-text"
     ]
+  },
+  "rich-text": { 
+    "props": { 
+      "text": "Coelho's Store",
+      "textAlignment": "CENTER",
+      "textPosition": "RIGHT",
+      "font": "t-heading-1"
+    }
   }
 }
