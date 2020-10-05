@@ -11,7 +11,7 @@
       "responsive-layout.mobile#mobile",
       "tab-layout",
       "modal-trigger#first",
-      "list-context.product-list",
+      "list-context.product-list#home",
       "stack-layout#cta"
     ]
   },
@@ -283,15 +283,15 @@
   },
   //MODAL LAYOUT ^^^^^^^^^^^^^^^^^^^^^^^^^
   //QUICK VIEW vvvvvvvvvvvvvvvvvvvvvvvvvvv
-  "list-context.product-list": {
+  "list-context.product-list#home": {
     "blocks": [
-      "product-summary.shelf"
+      "product-summary.shelf#home"
     ],
     "children": [
       "slider-layout"
     ]
   },
-  "product-summary.shelf": {
+  "product-summary.shelf#home": {
     "children": [
       "modal-trigger#quickview",
       "product-summary-name",

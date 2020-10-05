@@ -1,12 +1,14 @@
 {
   "store.product": {
     "children": [
+      "condition-layout.product",
       "breadcrumb",
-      "flex-layout.row#main"
+      "flex-layout.row#main",
+      "condition-layout.product#tabslider"
     ]
   },
-  "flex-layout.row#main": { 
-    "props": { 
+  "flex-layout.row#main": {
+    "props": {
       "marginTop": 6
     },
     "children": [
@@ -19,11 +21,11 @@
       "product-images"
     ]
   },
-  "flex-layout.col#right": {   
+  "flex-layout.col#right": {
     "props": {
       "preventVerticalStretch": true,
       "verticalAlign": "middle"
-    }, 
+    },
     "children": [
       "product-name",
       "product-identifier.product",
@@ -44,5 +46,160 @@
       "sku-selector",
       "product-quantity"
     ]
+  },
+  //CONDITION LAYOUT vvvvvvvvvvvvvvvvvvvvv
+  "condition-layout.product": {
+    "children": [
+      "condition.product#retro-mixer"
+    ]
+  },
+  "condition.product#retro-mixer": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId", //__RUNTIME__.route.params.id
+          "verb": "is",
+          "object": "20" //3-colors-retro-stand-mixer/p
+        }
+      ]
+    },
+    "children": [
+      "image#retro-mixer-banner"
+    ]
+  },
+  "image#retro-mixer-banner": {
+    "props": {
+      "src": "https://appliancetheme.vtexassets.com/assets/app/src/retroimage___92a8271aac7c51d2059193bdbe019016.jpg",
+      "width": "100%",
+      "height": "200px",
+      "blockClass": "cover"
+    }
+  },
+  //CONDITION LAYOUT ^^^^^^^^^^^^^^^^^^^^^
+  //CONDITION SLIDER CHALLENGE vvvvvvvvvvv
+  "condition-layout.product#tabslider": {
+    "children": [
+      "condition.product#tabslider"
+    ]
+  },
+  "condition.product#tabslider": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "verb": "is",
+          "object": "20" //3-colors-retro-stand-mixer/p
+        }
+      ]
+    },
+    "children": [
+      "tab-layout#p"
+    ]
+  },
+  "tab-layout#p": {
+    "children": [
+      "tab-list#p",
+      "tab-content#p"
+    ]
+  },
+  "tab-list#p": {
+    "children": [
+      "tab-list.item#p1",
+      "tab-list.item#p2"
+    ]
+  },
+  "tab-content#p": {
+    "children": [
+      "tab-content.item#p1",
+      "tab-content.item#p2"
+    ]
+  },
+  "tab-list.item#p1": {
+    "props": {
+      "tabId": "things-id",
+      "label": "Things \\o/",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#p2": {
+    "props": {
+      "tabId": "stuff-id",
+      "label": "STUFF =D"
+    }
+  },
+  "tab-content.item#p1": {
+    "children": [
+      "slider-layout#p1"
+    ],
+    "props": {
+      "tabId": "things-id"
+    }
+  },
+  "tab-content.item#p2": {
+    "children": [
+      "slider-layout#p2"
+    ],
+    "props": {
+      "tabId": "stuff-id"
+    }
+  },
+  "slider-layout#p1": {
+    "children": [
+      "image#i1",
+      "image#i2"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+  "slider-layout#p2": {
+    "children": [
+      "image#i3",
+      "image#i4"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+  "image#i1": {
+    "props": {
+      "src": "https://user-images.githubusercontent.com/43679629/92658168-81041500-f2cc-11ea-9ab0-b93e53f1c00e.jpg",
+      "height": 200
+    }
+  },
+  "image#i2": {
+    "props": {
+      "src": "https://user-images.githubusercontent.com/43679629/92658169-819cab80-f2cc-11ea-9323-c8df874e1920.jpg",
+      "height": 200
+    }
+  },
+  "image#i3": {
+    "props": {
+      "src": "https://user-images.githubusercontent.com/43679629/92658172-82354200-f2cc-11ea-92e5-f3aa3439a676.jpg",
+      "height": 200
+    }
+  },
+  "image#i4": {
+    "props": {
+      "src": "https://user-images.githubusercontent.com/43679629/92658175-82354200-f2cc-11ea-967d-0e54579edb90.jpg",
+      "height": 200
+    }
   }
+  //CONDITION SLIDER CHALLENGE ^^^^^^^^^^^
 }
