@@ -1,16 +1,18 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
       "rich-text",
       "info-card#button-right",
       "info-card#button-left",
       "search-result-layout.customQuery#home",
       "flex-layout.row",
-      "slider-layout#home"
+      "slider-layout#home",
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile"
     ]
   },
-  "rich-text": { 
-    "props": { 
+  "rich-text": {
+    "props": {
       "text": "Coelho's Store",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
@@ -32,14 +34,14 @@
   },
   "info-card#button-left": {
     "props": {
-    "isFullModeStyle": false,
-    "textPosition": "left",
-    "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
-    "headline": "Shining chrome",
-    "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until January 2020.",
-    "callToActionMode": "link",
-    "callToActionText": "Go to collection",
-    "textAlignment": "center"
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
+      "headline": "Shining chrome",
+      "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until January 2020.",
+      "callToActionMode": "link",
+      "callToActionText": "Go to collection",
+      "textAlignment": "center"
     }
   },
   //SEARCH RESULT vvvvvvvvvvvvvvvvvvvvvvvv
@@ -108,19 +110,19 @@
   },
   //SEARCH RESULT ^^^^^^^^^^^^^^^^^^^^^^^^
   //FLEX LAYOUT vvvvvvvvvvvvvvvvvvvvvvvvv
-  "flex-layout.row":{
+  "flex-layout.row": {
     "children": [
       "info-card#rethink",
       "flex-layout.col"
     ]
   },
-  "flex-layout.col":{
+  "flex-layout.col": {
     "children": [
       "image#electronics",
       "image#major-appliance"
     ]
   },
- "info-card#rethink": {
+  "info-card#rethink": {
     "props": {
       "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
       "isFullModeStyle": true,
@@ -140,8 +142,55 @@
       "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
       "maxWidth": "100%"
     }
-  }
+  },
   //FLEX LAYOUT ^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
+  //RESPONSEIVE LAYOUT vvvvvvvvvvvvvvvvvvv
+  "responsive-layout.desktop#desktop": {
+    "children": [
+      "rich-text#desktop",
+      "image#desktop"
+    ]
+  },
+  "responsive-layout.mobile#mobile": {
+    "children": [
+      "rich-text#mobile",
+      "image#mobile"
+    ]
+  },
+  "rich-text#desktop": {
+    "props": {
+      "text": "# Your Coffee, Your Way \n ### New Coffee Makers Collection (I'm on desktop)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#mobile": {
+    "props": {
+      "text": "# Your Coffee, Your Way \n #### New Coffee Makers Collection (I'm on mobile)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "image#desktop": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      } ,
+      "alt": "Coffee Makers Collection",
+      "maxWidth": "100%",
+    }
+  },
+  
+  "image#mobile": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      } ,
+      "alt": "Coffee Makers Collection",
+      "maxWidth": "100%",
+    }
+  }
+  //RESPONSEIVE LAYOUT ^^^^^^^^^^^^^^^^^^^
 }
