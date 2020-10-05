@@ -9,7 +9,8 @@
       "slider-layout#home",
       "responsive-layout.desktop#desktop",
       "responsive-layout.mobile#mobile",
-      "tab-layout"
+      "tab-layout",
+      "modal-trigger#first"
     ]
   },
   "rich-text": {
@@ -177,18 +178,17 @@
       "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
       "link": {
         "url": "/small-appliances/coffee-makers"
-      } ,
+      },
       "alt": "Coffee Makers Collection",
       "maxWidth": "100%"
     }
   },
-  
   "image#mobile": {
     "props": {
       "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
       "link": {
         "url": "/small-appliances/coffee-makers"
-      } ,
+      },
       "alt": "Coffee Makers Collection",
       "maxWidth": "100%"
     }
@@ -205,13 +205,13 @@
     "children": [
       "tab-list.item#1",
       "tab-list.item#2"
-      ]
+    ]
   },
   "tab-content": {
     "children": [
       "tab-content.item#1",
       "tab-content.item#2"
-      ]
+    ]
   },
   "tab-list.item#1": {
     "props": {
@@ -255,6 +255,29 @@
       "textPosition": "CENTER",
       "font": "t-heading-3"
     }
-  }
+  },
   //TAB LAYOUT ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //MODAL LAYOUT vvvvvvvvvvvvvvvvvvvvvvvvv
+  "modal-trigger#first": {
+    "children": [
+      "rich-text#trigger",
+      "modal-layout#first"
+    ]
+  },
+  "rich-text#trigger": { 
+    "props": {
+      "text": "CLICK ME"
+    }
+  },
+  "modal-layout#first": {
+    "children": [
+      "rich-text#hello"
+    ]
+  },
+  "rich-text#hello": { 
+    "props": {
+      "text": "Hello"
+    }
+  }
+  //MODAL LAYOUT ^^^^^^^^^^^^^^^^^^^^^^^^^
 }
