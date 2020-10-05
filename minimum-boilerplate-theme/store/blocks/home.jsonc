@@ -8,7 +8,8 @@
       "flex-layout.row",
       "slider-layout#home",
       "responsive-layout.desktop#desktop",
-      "responsive-layout.mobile#mobile"
+      "responsive-layout.mobile#mobile",
+      "tab-layout"
     ]
   },
   "rich-text": {
@@ -178,7 +179,7 @@
         "url": "/small-appliances/coffee-makers"
       } ,
       "alt": "Coffee Makers Collection",
-      "maxWidth": "100%",
+      "maxWidth": "100%"
     }
   },
   
@@ -189,8 +190,71 @@
         "url": "/small-appliances/coffee-makers"
       } ,
       "alt": "Coffee Makers Collection",
-      "maxWidth": "100%",
+      "maxWidth": "100%"
+    }
+  },
+  //RESPONSEIVE LAYOUT ^^^^^^^^^^^^^^^^^^^
+  //TAB LAYOUT vvvvvvvvvvvvvvvvvvvvvvvvvvv
+  "tab-layout": {
+    "children": [
+      "tab-list",
+      "tab-content"
+    ]
+  },
+  "tab-list": {
+    "children": [
+      "tab-list.item#1",
+      "tab-list.item#2"
+      ]
+  },
+  "tab-content": {
+    "children": [
+      "tab-content.item#1",
+      "tab-content.item#2"
+      ]
+  },
+  "tab-list.item#1": {
+    "props": {
+      "tabId": "majorAppliances",
+      "label": "Major Appliances",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#2": {
+    "props": {
+      "tabId": "electronics",
+      "label": "Electronics"
+    }
+  },
+  "tab-content.item#1": {
+    "children": [
+      "rich-text#1"
+    ],
+    "props": {
+      "tabId": "majorAppliances"
+    }
+  },
+  "tab-content.item#2": {
+    "children": [
+      "rich-text#2"
+    ],
+    "props": {
+      "tabId": "electronics"
+    }
+  },
+  "rich-text#1": {
+    "props": {
+      "text": "Texto para Major Appliances",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Texto para Electronics",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
     }
   }
-  //RESPONSEIVE LAYOUT ^^^^^^^^^^^^^^^^^^^
+  //TAB LAYOUT ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 }
