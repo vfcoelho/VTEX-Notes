@@ -3,7 +3,8 @@
     "blocks": [
       "rich-text",
       "info-card#button-right",
-      "info-card#button-left"
+      "info-card#button-left",
+      "search-result-layout.customQuery#home"
     ]
   },
   "rich-text": { 
@@ -38,5 +39,70 @@
     "callToActionText": "Go to collection",
     "textAlignment": "center"
     }
+  },
+  //SEARCH RESULT vvvvvvvvvvvvvvvvvvvvvvvv
+  "search-result-layout.customQuery#home": {
+    "props": {
+      "querySchema": {
+        "queryField": "Oven",
+        "mapField": "ft",
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home"
+    ]
+  },
+  "search-result-layout.desktop#home": {
+    "children": [
+      "breadcrumb.search",
+      "search-title.v2",
+      "flex-layout.row#top",
+      "search-fetch-previous",
+      "flex-layout.row#results",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#top": {
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ]
+  },
+  "flex-layout.row#results": {
+    "children": [
+      "flex-layout.col#filter",
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#filter": {
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  "flex-layout.col#search": {
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": {
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
+  },
+  "gallery": {
+    "blocks": [
+      "product-summary.shelf"
+    ]
   }
+  //SEARCH RESULT ^^^^^^^^^^^^^^^^^^^^^^^^
 }
