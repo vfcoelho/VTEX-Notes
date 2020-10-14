@@ -34,18 +34,18 @@ Other References:
 
 
 ## Useful Commands
-```
-npm i -g vtex
-vtex login appliancetheme
-vtex whoami
-vtex use workspace-name
-vtex list
-vtex unlink --all
-vtex workspace reset
-vtex link -c
-vtex browse
-```
-`https://{workspace}-{conta}.myvtex.com`
+Command | Description
+----|----
+`npm i -g vtex` | installs vtex toolbelt
+`vtex login {accountName}` | logs to a specific account
+`vtex whoami` | shows workspace and login information
+`vtex use workspace-name` | creates and switches to a workspace
+`vtex list` | lists dependencies, installed apps and liked apps in current workspace
+`vtex unlink --all` | clears all links
+`vtex workspace reset` | clears current workspace content
+`vtex link -c` | links current folder code and assets to logged workspace
+`vtex browse` | open workspace in browser at address: `https://{workspace}-{accoutnName}.myvtex.com`
+
 
 ## Notes
 
@@ -54,6 +54,7 @@ vtex browse
  - **Development Workspace**: you can link, install, and publish apps in this workspace. It is not available to common customers, meaning one should need to login to VTEX to see it.
  ```
  vtex publish
+ vtex install [{vendor}.{appName}@{version}]
  ```
  - **Production Workspace**: Can be used with VTEX A/B Testing tools and can be promoted to *master*. Can't be linked and can be available to common customers.
  ```
