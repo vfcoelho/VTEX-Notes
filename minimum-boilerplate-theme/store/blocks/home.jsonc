@@ -12,7 +12,9 @@
       "tab-layout",
       "modal-trigger#first",
       "list-context.product-list#home",
-      "stack-layout#cta"
+      "stack-layout#cta",
+      "info-card#clearance",
+      "info-card#vintage"
     ]
   },
   "rich-text": {
@@ -339,6 +341,34 @@
       "href": "/washer",
       "label": "Check these awesome discounts"
     }
-  }
+  },
   //STACK VIEW ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //CSS CUSTOMIZATION vvvvvvvvvvvvvvvvvvvv
+  "info-card#clearance": {
+    "props": {
+      "id": "info-card-clearance",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center",
+      "blockClass": "custom-info-card"
+    }
+  },
+"info-card#vintage": {
+    "props": {
+        "id": "info-card-vintage",
+        "isFullModeStyle": false,
+        "textPosition": "right",
+        "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+        "headline": "Vintage",
+        "callToActionText": "DISCOVER",
+        "callToActionUrl": "/sale/d",
+        "textAlignment": "center",
+        "blockClass": ["custom-info-card","vintage"]
+    }
+}
+  //CSS CUSTOMIZATION ^^^^^^^^^^^^^^^^^^^^
 }

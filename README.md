@@ -17,6 +17,8 @@
 
 ⭐ [Minimum Boilerplate](https://github.com/vtex-apps/minimum-boilerplate-theme)
 
+⭐ [CSS Handles](https://developers.vtex.com/docs/vtex-io-documentation-using-css-handles-for-store-customization)
+
 ⭐ [API Client](https://github.com/vtex/commerce-io-clients)
 
 ⭐ [Node API Client](https://github.com/vtex/node-vtex-api)
@@ -45,3 +47,8 @@ vtex browse
 ## Notes
 
 ⭐ - In VTEX IO, the accounts have three types of workspaces, as follows: [master](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master/), [producton](https://vtex.io/docs/recipes/store/creating-a-production-workspace) and development.
+
+⭐ - Enable CSS Inspector by adding `?__inspect` at the end of url, like so: 
+ ```
+ https://yourworkspace--youraccount.myvtex.com?__inspect
+ ```
