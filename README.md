@@ -50,6 +50,13 @@ vtex browse
 ## Notes
 
 ⭐ - In VTEX IO, the accounts have three types of workspaces, as follows: [master](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master/), [producton](https://vtex.io/docs/recipes/store/creating-a-production-workspace) and development.
+ - Workspaces are exact copies of your site front. They share the backend information, but have front configuration segregation. Meaning that everything that is under CMS will be unique to the workspace, but information such as price, catalog, and everything else will be the same for all workspaces.
+ - **Development Workspace**: you can link, install, and publish apps in this workspace. It is not available to common customers, meaning one should need to login to VTEX to see it.
+ - **Production Workspace**: Can be used with VTEX A/B Testing tools and can be promoted to *master*. Can't be linked and can be available to common customers.
+ ```
+ vtex use {WorkspaceName} --production
+ ```
+ - **Master Workspace**: Unique workspace that serves the store front for customers. Only one master can exist at the same time.
 
 ⭐ - Enable CSS Inspector by adding `?__inspect` at the end of url, like so: 
  ```
