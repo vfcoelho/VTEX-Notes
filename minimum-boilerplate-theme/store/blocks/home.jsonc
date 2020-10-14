@@ -111,7 +111,14 @@
   },
   "gallery": {
     "blocks": [
-      "product-summary.shelf"
+      "product-summary.shelf#customQuery"
+    ]
+  },
+  "product-summary.shelf#customQuery": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-selling-price"
     ]
   },
   //SEARCH RESULT ^^^^^^^^^^^^^^^^^^^^^^^^
