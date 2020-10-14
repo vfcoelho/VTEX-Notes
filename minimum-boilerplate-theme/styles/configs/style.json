@@ -221,32 +221,32 @@
       "muted-5": "#f2f4f5"
     },
     "on": {
-      "base": "#3f3f40",
+      "base": "#e68e94",
       "base--inverted": "#ffffff",
       "action-primary": "#ffffff",
       "action-secondary": "#0F3E99",
       "emphasis": "#ffffff",
       "disabled": "#979899",
       "success": "#ffffff",
-      "success--faded": "#3f3f40",
+      "success--faded": "#e68e94",
       "danger": "#ffffff",
-      "danger--faded": "#3f3f40",
+      "danger--faded": "#e68e94",
       "warning": "#ffffff",
       "warning--faded": "#1a1a1a",
       "muted-1": "#ffffff",
       "muted-2": "#ffffff",
-      "muted-3": "#3f3f40",
-      "muted-4": "#3f3f40",
-      "muted-5": "#3f3f40"
+      "muted-3": "#e68e94",
+      "muted-4": "#e68e94",
+      "muted-5": "#e68e94"
     },
     "hover-on": {
       "action-primary": "#ffffff",
       "action-secondary": "#0F3E99",
       "emphasis": "#ffffff",
       "success": "#ffffff",
-      "success--faded": "#3f3f40",
+      "success--faded": "#e68e94",
       "danger": "#ffffff",
-      "danger--faded": "#3f3f40",
+      "danger--faded": "#e68e94",
       "warning": "#ffffff",
       "warning--faded": "#1a1a1a"
     },
@@ -255,9 +255,9 @@
       "action-secondary": "#0F3E99",
       "emphasis": "#ffffff",
       "success": "#ffffff",
-      "success--faded": "#3f3f40",
+      "success--faded": "#e68e94",
       "danger": "#ffffff",
-      "danger--faded": "#3f3f40",
+      "danger--faded": "#e68e94",
       "warning": "#ffffff",
       "warning--faded": "#1a1a1a"
     }
@@ -326,7 +326,7 @@
       "heading-1": {
         "fontFamily": "Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
         "fontWeight": "700",
-        "fontSize": "3rem",
+        "fontSize": "3.5rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
