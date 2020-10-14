@@ -66,3 +66,8 @@ Command | Description
  ```
  https://yourworkspace--youraccount.myvtex.com?__inspect
  ```
+
+## Performance Tips
+
+⭐ - `__fold__` block
+ - the fold block sets a lazy load threshold. Whatever is below the `__fold__` block will load after the page load is complete and are within scroll frame.

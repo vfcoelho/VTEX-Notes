@@ -3,6 +3,7 @@
     "blocks": [
       "rich-text",
       "info-card#button-right",
+      "__fold__",
       "info-card#button-left",
       "search-result-layout.customQuery#home",
       "flex-layout.row",
