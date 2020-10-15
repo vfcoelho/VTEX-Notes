@@ -21,6 +21,8 @@
 
 ⭐ [Demo Store Theme](https://github.com/vtex-apps/demostore-theme)
 
+⭐ [Store Block Template](https://github.com/vtex-trainings/store-block-template)
+
 ⭐ [API Client](https://github.com/vtex/commerce-io-clients)
 
 ⭐ [Node API Client](https://github.com/vtex/node-vtex-api)
