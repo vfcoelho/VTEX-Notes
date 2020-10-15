@@ -325,26 +325,26 @@
   },
   //QUICK VIEW ^^^^^^^^^^^^^^^^^^^^^^^^^^^
   //STACK VIEW vvvvvvvvvvvvvvvvvvvvvvvvvvv
-  "stack-layout#cta": { 
+  "stack-layout#cta": {
     "children": [
       "image#cta",
       "link#cta"
     ]
   },
   "image#cta": {
-    "props": { 
+    "props": {
       "blockClass": "cover",
       "width": "100%",
       "height": 400,
       "src": "https://appliancetheme.vtexassets.com/assets/app/src/appliancecat___1b7592b49667c6a89203a0997e06bc87.jpg"
     }
   },
-  "link#cta": { 
+  "link#cta": {
     "props": {
       "displayMode": "button",
       "buttonProps": {
         "variant": "primary",
-        "size": "large" 
+        "size": "large"
       },
       "href": "/washer",
       "label": "Check these awesome discounts"
@@ -365,18 +365,28 @@
       "blockClass": "custom-info-card"
     }
   },
-"info-card#vintage": {
+  "info-card#vintage": {
     "props": {
-        "id": "info-card-vintage",
-        "isFullModeStyle": false,
-        "textPosition": "right",
-        "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-        "headline": "Vintage",
-        "callToActionText": "DISCOVER",
-        "callToActionUrl": "/sale/d",
-        "textAlignment": "center",
-        "blockClass": ["custom-info-card","vintage"]
+      "id": "info-card-vintage",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+      "headline": "Vintage",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center",
+      "blockClass": [
+        "custom-info-card",
+        "vintage"
+      ]
     }
-}
+  },
   //CSS CUSTOMIZATION ^^^^^^^^^^^^^^^^^^^^
+  //PERFORMANCE vvvvvvvvvvvvvvvvvvvvvvvvvv
+  "product-summary-image": {
+    "props": {
+      "width": 200
+    }
+  }
+  //PERFORMANCE ^^^^^^^^^^^^^^^^^^^^^^^^^^
 }

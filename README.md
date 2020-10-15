@@ -31,6 +31,7 @@
 
 Other References:
 - [Tachyons](https://tachyons.io/)
+- [Pexels](https://www.pexels.com/) free stock photos
 
 
 ## Useful Commands
@@ -69,9 +70,14 @@ Command | Description
 
 ## Performance Tips
 
-⭐ - `__fold__` block
+⭐ - `__fold__` **block**
  - the fold block sets a lazy load threshold. Whatever is below the `__fold__` block will load after the page load is complete and are within scroll frame.
+
 ⭐ - **Menus**
  - Menus load in every page. That makes them a major performance concern, since they have a site wide impact.
  - One technique to reduce menu loading time in VTEX IO is to define its items as props instead of children blocks.
  - In cases where one might have sub menus declared, the above tip might not work. But one can still use it on the menu leaf items (the last elements on the menu tree). Also, the sub menu items load can be deferred.
+
+⭐ - **Images**
+ - Images can have its size significantly reduced before being uploaded by using tools such as [Squoosh](https://squoosh.app/).
+ - We can also tell VTEX IO to resize images at the server side using VTEX IO server side rendering features. To do that, set the `width` or `maxWidth` **props** in the image blocks such as `product-image`, `product-summary-image` and `image`.
