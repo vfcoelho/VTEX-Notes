@@ -16,7 +16,7 @@
       "stack-layout#cta",
       "info-card#clearance",
       "info-card#vintage",
-      "flex-layout.row#slider",
+      "list-context.image-list#demo",
       "rich-text#new-arrivals",
       "list-context.product-list#new-arrivals",
       "rich-text#clearance",
@@ -393,28 +393,6 @@
       "width": 200
     }
   },
-  "carousel#home": {
-    "props": {
-      "autoplay": true,
-      "autoplaySpeed": 4,
-      "banners": [
-        {
-          "image": "assets/chrome1.png"
-        },
-        {
-          "image": "assets/vintage1.png"
-        }
-      ],
-      "height": 440,
-      "showArrows": true,
-      "showDots": true
-    }
-  },
-  "flex-layout.row#slider": {
-    "children": [
-      "carousel#home"
-    ]
-  },
   "list-context.product-list#new-arrivals": {
     "blocks": [
       "product-summary.shelf"
@@ -460,6 +438,36 @@
       "font": "t-heading-2",
       "textPosition": "CENTER",
       "textAlign": "CENTER"
+    }
+  },
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "assets/chrome1.png",
+          "description": "something something"
+        },
+        {
+          "image": "assets/vintage1.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "autoplay":{
+        "timeout":5000,
+        "stopOnHover":true
+      }
     }
   }
   //PERFORMANCE ^^^^^^^^^^^^^^^^^^^^^^^^^^

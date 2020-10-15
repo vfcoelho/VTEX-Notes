@@ -50,6 +50,7 @@
     "vtex.condition-layout": "1.x",
     "vtex.store-link": "0.x",
     "vtex.modal-layout": "0.x",
+    "vtex.store-image": "0.x",
     "vtex.product-price": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
