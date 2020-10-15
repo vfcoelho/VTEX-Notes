@@ -1,5 +1,11 @@
 {
   "store.search": {
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    },
     "blocks": [
       "search-result-layout"
     ]
