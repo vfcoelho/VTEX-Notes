@@ -1,6 +1,37 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
     "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#categories"
+    ]
+  },
+  "menu-item#categories": {
+    "props": {
+      "id": "menu-item-custom-categories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Categories",
+        "text": "Categories"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#categories"
+    ]
+  },
+  "vtex.menu@2.x:submenu#categories": {
+    "children": [
+      "vtex.menu@2.x:menu#categories"
+    ]
+  },
+  "vtex.menu@2.x:menu#categories": {
+    "props": {
       "items": [
         {
           "id": "menu-item-category-electronics",

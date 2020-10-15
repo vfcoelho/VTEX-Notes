@@ -74,3 +74,4 @@ Command | Description
 ⭐ - **Menus**
  - Menus load in every page. That makes them a major performance concern, since they have a site wide impact.
  - One technique to reduce menu loading time in VTEX IO is to define its items as props instead of children blocks.
+ - In cases where one might have sub menus declared, the above tip might not work. But one can still use it on the menu leaf items (the last elements on the menu tree). Also, the sub menu items load can be deferred.
