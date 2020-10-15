@@ -71,3 +71,6 @@ Command | Description
 
 ⭐ - `__fold__` block
  - the fold block sets a lazy load threshold. Whatever is below the `__fold__` block will load after the page load is complete and are within scroll frame.
+⭐ - **Menus**
+ - Menus load in every page. That makes them a major performance concern, since they have a site wide impact.
+ - One technique to reduce menu loading time in VTEX IO is to define its items as props instead of children blocks.
