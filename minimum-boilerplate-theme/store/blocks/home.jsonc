@@ -15,7 +15,10 @@
       "list-context.product-list#home",
       "stack-layout#cta",
       "info-card#clearance",
-      "info-card#vintage"
+      "info-card#vintage",
+      "flex-layout.row#slider",
+      "shelf#new-arrivals",
+      "shelf#clearance"
     ]
   },
   "rich-text": {
@@ -386,6 +389,61 @@
   "product-summary-image": {
     "props": {
       "width": 200
+    }
+  },
+  "carousel#home": {
+    "props": {
+      "autoplay": true,
+      "autoplaySpeed": 4,
+      "banners": [
+        {
+          "image": "assets/chrome1.png"
+        }
+      ],
+      "height": 440,
+      "showArrows": true,
+      "showDots": true
+    }
+  },
+  "flex-layout.row#slider": {
+    "children": [
+      "carousel#home"
+    ]
+  },
+  "shelf#new-arrivals": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "never",
+      "collection": "139",
+      "productList": {
+        "maxItems": 9,
+        "itemsPerPage": 3,
+        "minItemsPerPage": 1.5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "New arrivals"
+      }
+    }
+  },
+  "shelf#clearance": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "140",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 9,
+        "itemsPerPage": 3,
+        "minItemsPerPage": 1.5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Clearance"
+      }
     }
   }
   //PERFORMANCE ^^^^^^^^^^^^^^^^^^^^^^^^^^

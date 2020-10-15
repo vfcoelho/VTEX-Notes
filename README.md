@@ -19,6 +19,8 @@
 
 ⭐ [CSS Handles](https://developers.vtex.com/docs/vtex-io-documentation-using-css-handles-for-store-customization)
 
+⭐ [Demo Store Theme](https://github.com/vtex-apps/demostore-theme)
+
 ⭐ [API Client](https://github.com/vtex/commerce-io-clients)
 
 ⭐ [Node API Client](https://github.com/vtex/node-vtex-api)
