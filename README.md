@@ -87,3 +87,24 @@ Command | Description
 
 ⭐ - **Search**
  - Search behavior can also impact on site performance. One can configure the `store.search` component `context` prop to improve its performance. `"skusFilter": "FIRST_AVAILABLE"` returns the first skus available instead of all available and `"simulationBehavior": "skip"` skips price simulation, consuming cached price for each sku.
+
+⭐ - **Tools and other tips**
+ - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+    - Google dev performance tool
+ - [Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/)
+    - Same as lighthouse, but for more standardized connection parameters since it's not executed in dev's machine, but in a server with control over connection and context variables
+    - Take a look at the **Lighthouse Scoring Calculator** to check what is the metric that could bring the biggest gain on performance
+ - [Web.dev](https://web.dev/)
+    - Performance concepts and techniques documentation
+    - Each metric in *lighthouse* has a different way to be improved
+ - ![Browser Performance Tab](docs/BrowserPerformanceTab.png)
+    - Use this on a incognito window
+    - One can simulate the load of the page by using the performance tab on the browser dev tools. This will generate a load report that can be used to identify how each metric might be impacted during load and what files might be the offenders.
+ - ![VTEX Performance Settings](docs/VTEXPerformanceSettings.png)
+    - VTEX has exposed many configurations regarding performance tweaks
+    - ❗ Test these features before deploying. These features should be used with caution. Since they are in CMS section of the admin, they should be applied to the workspace only.
+ - [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+    - ![Profiler](docs/profiler.png)
+    - The profiler can show what components are taking most time to load.
+    - Gaps mean potential performance opportunities
+    - Use this profiler assessment in production workspaces
