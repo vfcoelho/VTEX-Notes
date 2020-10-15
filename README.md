@@ -83,6 +83,7 @@ Command | Description
 ⭐ - **Images**
  - Images can have its size significantly reduced before being uploaded by using tools such as [Squoosh](https://squoosh.app/).
  - We can also tell VTEX IO to resize images at the server side using VTEX IO server side rendering features. To do that, set the `width` or `maxWidth` **props** in the image blocks such as `product-image`, `product-summary-image` and `image`.
+ - It also helps to use all images from store assets instead to use external sources. That way, the image is served by VTEX CDN.
 
 ⭐ - **Search**
  - Search behavior can also impact on site performance. One can configure the `store.search` component `context` prop to improve its performance. `"skusFilter": "FIRST_AVAILABLE"` returns the first skus available instead of all available and `"simulationBehavior": "skip"` skips price simulation, consuming cached price for each sku.

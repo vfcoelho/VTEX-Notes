@@ -398,6 +398,9 @@
       "banners": [
         {
           "image": "assets/chrome1.png"
+        },
+        {
+          "image": "assets/vintage1.png"
         }
       ],
       "height": 440,
