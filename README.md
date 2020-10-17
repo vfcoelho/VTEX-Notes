@@ -25,6 +25,8 @@
 
 ⭐ [Store Theme](https://github.com/vtex-apps/store-theme.git)
 
+⭐ [Customizing Styles](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-5-customizingstyles)
+
 ⭐ [API Client](https://github.com/vtex/commerce-io-clients)
 
 ⭐ [Node API Client](https://github.com/vtex/node-vtex-api)
@@ -38,6 +40,7 @@
 Other References:
 - [Tachyons](https://tachyons.io/)
 - [Pexels](https://www.pexels.com/) free stock photos
+- [Subatomic Design Systems](https://daneden.me/2018/01/05/subatomic-design-systems/)
 
 
 ## Useful Commands
