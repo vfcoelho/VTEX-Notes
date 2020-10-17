@@ -23,6 +23,8 @@
 
 ⭐ [Store Block Template](https://github.com/vtex-trainings/store-block-template)
 
+⭐ [Store Theme](https://github.com/vtex-apps/store-theme.git)
+
 ⭐ [API Client](https://github.com/vtex/commerce-io-clients)
 
 ⭐ [Node API Client](https://github.com/vtex/node-vtex-api)

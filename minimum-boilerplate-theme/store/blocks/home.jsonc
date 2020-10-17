@@ -2,6 +2,7 @@
   "store.home": {
     "blocks": [
       "rich-text",
+      "countdown",
       "info-card#button-right",
       "__fold__",
       "info-card#button-left",
