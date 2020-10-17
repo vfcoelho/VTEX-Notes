@@ -3,6 +3,7 @@
     "blocks": [
       "rich-text",
       "countdown",
+      "countdown.title",
       "info-card#button-right",
       "__fold__",
       "info-card#button-left",

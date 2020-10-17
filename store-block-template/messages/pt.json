@@ -1,5 +1,9 @@
 {
+  "countdown.title": "Contagem Regressiva",
   "editor.countdown.title": "Contagem regressiva",
   "editor.countdown.description": "Componente de contagem regressiva",
-  "countdown.title": "Contagem Regressiva"
+  "editor.countdown-title.title": "Título da Contagem Regressiva",
+  "editor.countdown-title.description": "Componente de Título da Contagem",
+  "editor.countdown-title.title.title": "Campo de Título",
+  "editor.countdown-title.title.description": "Texto que será exibido na página"
 }
