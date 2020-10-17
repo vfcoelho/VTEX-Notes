@@ -1,0 +1,5 @@
+query productReleaseDate($slug: String){
+    product(slug: $slug) {#calls product resolver from vtex.search-graphql
+        releaseDate
+    }
+}
