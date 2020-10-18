@@ -32,7 +32,7 @@ export const tick = (targetDate: string, dispatchFn: React.Dispatch<React.SetSta
   let secondsLeft = (finalDate.getTime() - now.getTime())/ONE_SECOND_IN_MILLIS
 
   setTimeout(()=> {
-    dispatchFn(parseTimeRemaining(secondsLeft))
+    dispatchFn(parseTimeRemaining(Math.max(0,secondsLeft)))
   }, ONE_SECOND_IN_MILLIS)
 }
 
