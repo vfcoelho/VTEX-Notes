@@ -1,6 +1,26 @@
 
 # VTEX Notes
 
+## About this repo:
+
+This is a study repository about VTEX IO based on lessons taken from VTEX.
+The goal of this repo is to provide useful examples of various implementations
+using all technologies provided by VTEX IO. It implements a store and its support 
+structures to illustrate how more advanced builds can be made.
+
+You will find different projects in this repository. Each of them is a separate
+example repository cloned from VTEX public github account. Each of them is needed
+for this example store to properly work and they are all contained in this single 
+repository for the sake of simplicity of the overall example outcome.
+
+These are the projects here contained and its purposes:
+Project | Description
+--------|------------
+[minimum-boilerplate-theme](./minimum-boilerplate-theme) | The **Store Theme**. It holds the store frontend and examples on how to manipulate native and custom blocks as well as its styles and structures.
+[store-block-template](./store-block-template) | A custom block. It shows how to create a custom component to be later used in a store theme project. It also contains examples of how to consume internal **VTEX APIs**, how to expose configurations in **Site Editor** and how to handle **localization** for VTEX IO apps.
+[service-course-template](./service-course-template) |
+[events-example](./events-example) | A mock project to generate test events for `service-course-template`. **The events activation depends on access on the [healthcheck route](https://{workspace}--appliancetheme.myvtex.com/_v/app/events-example/hcheck)**
+
 ## Useful Links
 
 ⭐ [Guides](https://developers.vtex.com/docs)
@@ -26,6 +46,8 @@
 ⭐ [Store Theme](https://github.com/vtex-apps/store-theme.git)
 
 ⭐ [Customizing Styles](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-5-customizingstyles)
+
+⭐ [Service Template](https://github.com/vtex-trainings/service-course-template)
 
 ⭐ [API Client](https://github.com/vtex/commerce-io-clients)
 
@@ -59,7 +81,7 @@ Command | Description
 
 ## Notes
 
-⭐ - In VTEX IO, the accounts have three types of workspaces, as follows: [master](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master/), [producton](https://vtex.io/docs/recipes/store/creating-a-production-workspace) and development.
+⭐ In VTEX IO, the accounts have three types of workspaces, as follows: [master](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master/), [producton](https://vtex.io/docs/recipes/store/creating-a-production-workspace) and development.
  - Workspaces are exact copies of your site front. They share the backend information, but have front configuration segregation. Meaning that everything that is under CMS will be unique to the workspace, but information such as price, catalog, and everything else will be the same for all workspaces.
  - **Development Workspace**: you can link, install, and publish apps in this workspace. It is not available to common customers, meaning one should need to login to VTEX to see it.
  ```
@@ -72,30 +94,37 @@ Command | Description
  ```
  - **Master Workspace**: Unique workspace that serves the store front for customers. Only one master can exist at the same time.
 
-⭐ - Enable CSS Inspector by adding `?__inspect` at the end of url, like so: 
+⭐ Enable CSS Inspector by adding `?__inspect` at the end of url, like so: 
  ```
  https://yourworkspace--youraccount.myvtex.com?__inspect
  ```
 
+⭐ Services
+ - VTEX IO Services are a way to provide a complete customization environment. By creating services, one can create back-end hosted on VTEX
+ - VTEX IO supports services written in `node` or `dotnet`
+ - Services run in `Kubernets`
+ - One can expose internal or external routes supporting `rest` or `graphql`
+ - **Events are isolated by workspace**
+
 ## Performance Tips
 
-⭐ - `__fold__` **block**
+⭐ `__fold__` **block**
  - the fold block sets a lazy load threshold. Whatever is below the `__fold__` block will load after the page load is complete and are within scroll frame.
 
-⭐ - **Menus**
+⭐ **Menus**
  - Menus load in every page. That makes them a major performance concern, since they have a site wide impact.
  - One technique to reduce menu loading time in VTEX IO is to define its items as props instead of children blocks.
  - In cases where one might have sub menus declared, the above tip might not work. But one can still use it on the menu leaf items (the last elements on the menu tree). Also, the sub menu items load can be deferred.
 
-⭐ - **Images**
+⭐ **Images**
  - Images can have its size significantly reduced before being uploaded by using tools such as [Squoosh](https://squoosh.app/).
  - We can also tell VTEX IO to resize images at the server side using VTEX IO server side rendering features. To do that, set the `width` or `maxWidth` **props** in the image blocks such as `product-image`, `product-summary-image` and `image`.
  - It also helps to use all images from store assets instead to use external sources. That way, the image is served by VTEX CDN.
 
-⭐ - **Search**
+⭐ **Search**
  - Search behavior can also impact on site performance. One can configure the `store.search` component `context` prop to improve its performance. `"skusFilter": "FIRST_AVAILABLE"` returns the first skus available instead of all available and `"simulationBehavior": "skip"` skips price simulation, consuming cached price for each sku.
 
-⭐ - **Tools and other tips**
+⭐ **Tools and other tips**
  - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
     - Google dev performance tool
  - [Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/)
