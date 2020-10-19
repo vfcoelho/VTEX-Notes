@@ -5,6 +5,14 @@
   "minReplicas": 2,
   "maxReplicas": 10,
   "workers": 4,
+  "events": {
+    "liveUsersUpdate": {
+      "sender": "vtex.events-example",
+      "keys": [
+        "send-event"
+      ]
+    }
+  },
   "routes": {
     "analytics": {
       "path": "/_v/app/analytics/realTime",

@@ -49,9 +49,12 @@ Project | Description
 
 ⭐ [Service Template](https://github.com/vtex-trainings/service-course-template)
 
-⭐ [API Client](https://github.com/vtex/commerce-io-clients)
+⭐ [API Clients](https://github.com/vtex/commerce-io-clients)
 
 ⭐ [Node API Client](https://github.com/vtex/node-vtex-api)
+ - [IO Clients List](https://github.com/vtex/node-vtex-api/blob/ccf4d8f8d3208007c4bfd558baf979df8d825af8/src/clients/IOClients.ts)
+
+⭐ [VTEX IO Clients Document](https://www.notion.so/How-to-use-and-create-Clients-on-VTEX-IO-1dbd20c928c642d0ba059d5efbe7874b)
 
 ⭐ [GraphQL IDE](https://github.com/vtex-apps/admin-graphql-ide)
 
@@ -105,6 +108,7 @@ Command | Description
  - Services run in `Kubernets`
  - One can expose internal or external routes supporting `rest` or `graphql`
  - **Events are isolated by workspace**
+ - All clients *export* a *function* that receives an object of type **Context**
 
 ## Performance Tips
 
