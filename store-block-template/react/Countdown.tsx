@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { TimeSplit } from './typings/global'
-import { tick } from './utils/time'
+import { tick, getTwoDaysFromNow } from './utils/time'
 import { useCssHandles } from 'vtex.css-handles'
 import { useQuery } from 'react-apollo'
 import useProduct from 'vtex.product-context/useProduct'
@@ -11,7 +11,7 @@ interface CountdownProps {
   targetDate: string
 }
 
-//const DEFAULT_TARGET_DATE = getTwoDaysFromNow()
+const DEFAULT_TARGET_DATE = getTwoDaysFromNow()
 const CSS_HANDLES = ['countdown'] //defines css handles for style customization
 
 // Component
@@ -35,7 +35,7 @@ const Countdown: StorefrontFunctionComponent<CountdownProps> = ({
     ssr: false
   })
 
-  tick(data?.product?.releaseDate || targetDate, setTime)
+  tick(data?.product?.releaseDate || targetDate || DEFAULT_TARGET_DATE, setTime)
 
   if (targetDate || !product) {
     return (
