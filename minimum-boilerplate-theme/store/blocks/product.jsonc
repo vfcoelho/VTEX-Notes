@@ -29,6 +29,7 @@
     "children": [
       "product-name",
       "product-identifier.product",
+      "product-view-counter",
       "product-price",
       "flex-layout.row#qty-sku",
       "shipping-simulator",

@@ -4,5 +4,8 @@
   },
   "countdown.title": {
     "component": "Title"
+  },
+  "product-view-counter": {
+    "component":"ProductViewCounter"
   }
 }

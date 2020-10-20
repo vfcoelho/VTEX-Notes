@@ -5,5 +5,7 @@
   "editor.countdown-title.title": "Título da Contagem Regressiva",
   "editor.countdown-title.description": "Componente de Título da Contagem",
   "editor.countdown-title.title.title": "Campo de Título",
-  "editor.countdown-title.title.description": "Texto que será exibido na página"
+  "editor.countdown-title.title.description": "Texto que será exibido na página",
+  "editor.product-view.title":"Contador de Visualizações de Produto",
+  "editor.product-view.description":"Componente de Contador de Visualizações de Produto"
 }

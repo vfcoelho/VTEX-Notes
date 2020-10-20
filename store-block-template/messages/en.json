@@ -5,5 +5,7 @@
   "editor.countdown-title.title": "Countdown Title",
   "editor.countdown-title.description": "Countdown Title Component",
   "editor.countdown-title.title.title": "Title Field",
-  "editor.countdown-title.title.description": "Text to be shown in page"
+  "editor.countdown-title.title.description": "Text to be shown in page",
+  "editor.product-view.title":"Product View Counter",
+  "editor.product-view.description":"Product View Counter Component"
 }
