@@ -1,0 +1,4 @@
+type ProductList {
+    slug: String
+    count: Int
+}

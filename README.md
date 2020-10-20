@@ -53,7 +53,10 @@ Project | Description
  - [IO Clients List](https://github.com/vtex/node-vtex-api/blob/ccf4d8f8d3208007c4bfd558baf979df8d825af8/src/clients/IOClients.ts)
  - [VTEX IO Clients Document](https://www.notion.so/How-to-use-and-create-Clients-on-VTEX-IO-1dbd20c928c642d0ba059d5efbe7874b)
 
+⭐ [GraphQL Example](https://github.com/vtex-apps/graphql-example)
+
 ⭐ [GraphQL IDE](https://github.com/vtex-apps/admin-graphql-ide)
+ - [Internal Admin IDE](https://{wortkspace}--{store}.myvtex.com/admin/graphql-ide)
 
 ⭐ [React App Template](https://github.com/vtex-apps/react-app-template)
 
@@ -99,19 +102,29 @@ Command | Description
  https://yourworkspace--youraccount.myvtex.com?__inspect
  ```
 
+⭐ Store Theme
+ - > Link `minimum-boilerplate-theme`
+
+⭐ Custom Blocks
+ - > To see the `countdown` block working properly, first link the `store-block-template` as it is a `minimum-boilerplate-theme` dependency
+
 ⭐ Services
  - > To see the `service-course-template` service working properly, first link the `events-example`
-   > Additionally, you need to access the [health check](https://{workspace}--appliancetheme.myvtex.com/_v/app/events-example/hcheck) url to start generating events
+   > Additionally, you need to access the [health check](https://{workspace}--{store}.myvtex.com/_v/app/events-example/hcheck) url to start generating events
  - VTEX IO Services are a way to provide a complete customization environment. By creating services, one can create back-end hosted on VTEX
  - VTEX IO supports services written in `node` or `dotnet`
  - Services run in `Kubernets`
  - One can expose internal or external routes supporting `rest` or `graphql`
  - **Events are isolated by workspace**
- - All clients *export* a *function* that receives an object of type **Context**
  - `service/node/`
    - `handlers` handles incoming external HTTP calls
    - `event` handles internal events
    - `clients` manipulate internal resources
+   - `resolvers` handles graphql calls
+ - All clients *export* a *function* that receives an object of type **Context**
+ - *GraphQL* is the **only interface** between service apps and front end apps
+   - Testing your GraphQL resolvers:
+   ![Testing your GraphQL resolvers](docs/TestingGraphQL.png)
 
 ## Performance Tips
 
