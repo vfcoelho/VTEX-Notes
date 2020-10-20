@@ -19,7 +19,7 @@ Project | Description
 [minimum-boilerplate-theme](./minimum-boilerplate-theme) | The **Store Theme**. It holds the store frontend and examples on how to manipulate native and custom blocks as well as its styles and structures.
 [store-block-template](./store-block-template) | A custom block. It shows how to create a custom component to be later used in a store theme project. It also contains examples of how to consume internal **VTEX APIs**, how to expose configurations in **Site Editor** and how to handle **localization** for VTEX IO apps.
 [service-course-template](./service-course-template) |
-[events-example](./events-example) | A mock project to generate test events for `service-course-template`. **The events activation depends on access on the [healthcheck route](https://{workspace}--appliancetheme.myvtex.com/_v/app/events-example/hcheck)**
+[events-example](./events-example) | A mock project to generate test events for `service-course-template`.
 
 ## Useful Links
 
@@ -101,6 +101,7 @@ Command | Description
 
 ⭐ Services
  - > To see the `service-course-template` service working properly, first link the `events-example`
+   > Additionally, you need to access the [health check](https://{workspace}--appliancetheme.myvtex.com/_v/app/events-example/hcheck) url to start generating events
  - VTEX IO Services are a way to provide a complete customization environment. By creating services, one can create back-end hosted on VTEX
  - VTEX IO supports services written in `node` or `dotnet`
  - Services run in `Kubernets`
@@ -146,7 +147,7 @@ Command | Description
     - VTEX has exposed many configurations regarding performance tweaks
     - ❗ Test these features before deploying. These features should be used with caution. Since they are in CMS section of the admin, they should be applied to the workspace only.
  - [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
-    - ![Profiler](docs/profiler.png)
-    - The profiler can show what components are taking most time to load.
-    - Gaps mean potential performance opportunities
-    - Use this profiler assessment in production workspaces
+    - ![Profiler](docs/Profiler.png)
+   - The profiler can show what components are taking most time to load.
+   - Gaps mean potential performance opportunities
+   - Use this profiler assessment in production workspaces
