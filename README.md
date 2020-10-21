@@ -48,6 +48,7 @@ Project | Description
 ⭐ [Customizing Styles](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-5-customizingstyles)
 
 ⭐ [Service Template](https://github.com/vtex-trainings/service-course-template)
+ - [Service Example](https://github.com/vtex-apps/service-example)
  - [API Clients](https://github.com/vtex/commerce-io-clients)
  - [Node API Client](https://github.com/vtex/node-vtex-api)
  - [IO Clients List](https://github.com/vtex/node-vtex-api/blob/ccf4d8f8d3208007c4bfd558baf979df8d825af8/src/clients/IOClients.ts)
