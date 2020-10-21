@@ -58,12 +58,15 @@ Project | Description
 
 ⭐ [GraphQL IDE](https://github.com/vtex-apps/admin-graphql-ide)
  - [Internal Admin IDE](https://{wortkspace}--{store}.myvtex.com/admin/graphql-ide)
+ - [App Internal IDE](https://{workspace}--{store}.myvtex.com/_v/private/{vendor}.{app-name}@{version}/graphiql/v1)
 
 ⭐ [React App Template](https://github.com/vtex-apps/react-app-template)
 
 ⭐ [App Whitelist Form](https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform)
 
 ⭐ [VTEX Design System](https://styleguide.vtex.com/) (For developing admin interfaces)
+
+⭐ [VTEX APIs](https://developers.vtex.com/vtex-developer-docs/reference/get-to-know-vtex-apis)
 
 ⭐ [Test Tools](https://github.com/vtex/test-tools/tree/master/examples)
 
@@ -85,6 +88,7 @@ Command | Description
 `vtex workspace reset` | clears current workspace content
 `vtex link -c` | links current folder code and assets to logged workspace
 `vtex browse` | open workspace in browser at address: `https://{workspace}-{accoutnName}.myvtex.com`
+`vtex local token` | Shows your personal VTEX [JWT](https://jwt.io/) development token
 
 
 ## Notes

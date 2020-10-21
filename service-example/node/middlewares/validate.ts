@@ -7,6 +7,7 @@ export async function validate(ctx: Context, next: () => Promise<any>) {
     },
   } = ctx
 
+  console.log('Auth:', ctx.vtex.authToken)// access https://{workspace}--appliancetheme.myvtex.com/_v/status/200 to see this log
   console.log('Received params:', params)
 
   const { code } = params
