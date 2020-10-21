@@ -2,5 +2,7 @@
   "admin/test": "test",
   "store/test": "test",
   "admin-example.navigation.label": "IO Training",
-  "admin-example.navigation.search.kws": "mock, test, training, io"
+  "admin-example.navigation.search.kws": "mock, test, training, io",
+  "admin-example.navigation.insight": "Insights",
+  "admin-example.navigation.management": "Management"
 }
