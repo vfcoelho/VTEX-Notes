@@ -125,6 +125,32 @@ Command | Description
  - *GraphQL* is the **only interface** between service apps and front end apps
    - Testing your GraphQL resolvers:
    ![Testing your GraphQL resolvers](docs/TestingGraphQL.png)
+      ```graphql
+      query ($topN: Int) {
+         productList(topN: $topN){
+            slug
+            count
+         }
+      }
+      ```
+      ```json
+      {
+         "topN":2
+      }
+      ```
+      ---
+      ```graphql
+      query ($slug: String) {
+         productInfo(slug: $slug){
+            count
+         }
+      }
+      ```
+      ```json
+      {
+         "slug":"1307"
+      }
+      ```
 
 ## Performance Tips
 

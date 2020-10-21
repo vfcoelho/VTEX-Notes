@@ -2,5 +2,6 @@
 # in some cases, such as using customer tokens or using api authentication, we will need to declare directives in this schema.
 # to know more about directives, refer to https://github.com/vtex-apps/graphql-example
 type Query {
-    productList(topN: Int): [ProductList]
+    productInfo(slug: String): ProductInfo,
+    productList(topN: Int): ProductList
 }

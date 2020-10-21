@@ -1,6 +1,24 @@
 
 import { COURSE_ENTITY } from '../utils/constants'
 
+export const productInfo = async (
+    _: any,
+    { slug }: { slug: string },
+    { clients: { masterdata } }: Context
+) =>
+    masterdata.searchDocuments(
+        {
+            dataEntity: COURSE_ENTITY,
+            fields: ['count'],
+            where: `slug=${slug}`,
+            schema: 'v1',
+            pagination:{
+                page:1,
+                pageSize:1
+            }
+        }
+    ).then((( data ) => data[0]))
+
 export const productList = async (
     _: any,
     { topN }: { topN: number },
@@ -15,3 +33,5 @@ export const productList = async (
             sort: `count DESC`
         }
     ).then((({ data }) => data))
+    
+    

@@ -3,3 +3,8 @@ query productReleaseDate($slug: String){
         releaseDate
     }
 }
+query productViewCount($slug: String){
+    productInfo(slug: $slug) {#calls product resolver from vtex.search-graphql
+        releaseDate
+    }
+}
