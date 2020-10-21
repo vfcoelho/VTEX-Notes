@@ -62,6 +62,8 @@ Project | Description
 
 ⭐ [App Whitelist Form](https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform)
 
+⭐ [VTEX Design System](https://styleguide.vtex.com/) (For developing admin interfaces)
+
 ⭐ [Test Tools](https://github.com/vtex/test-tools/tree/master/examples)
 
 Other References:
