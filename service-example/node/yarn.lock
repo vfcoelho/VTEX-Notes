@@ -1281,6 +1281,58 @@
     uuid "^3.3.3"
     xss "^1.0.6"
 
+"@vtex/api@^6.36.2":
+  version "6.37.0"
+  resolved "https://registry.yarnpkg.com/@vtex/api/-/api-6.37.0.tgz#a07e6adbfc02866f901cf0cfff2155f2c279adc5"
+  integrity sha512-Vy970ZfgOttrxeiJW2oM8rQ0E8t/HE5cQhbGIawfJsu35HEWA9NnWRSR3bdLMczT9oYIY9QwE8IfdU4b44dhKw==
+  dependencies:
+    "@types/koa" "^2.11.0"
+    "@types/koa-compose" "^3.2.3"
+    "@vtex/node-error-report" "^0.0.3"
+    "@wry/equality" "^0.1.9"
+    agentkeepalive "^4.0.2"
+    apollo-server-errors "^2.2.1"
+    archiver "^3.0.0"
+    axios "^0.19.2"
+    axios-retry "^3.1.2"
+    bluebird "^3.5.4"
+    chalk "^2.4.2"
+    co-body "^6.0.0"
+    cookie "^0.3.1"
+    dataloader "^1.4.0"
+    fast-json-stable-stringify "^2.0.0"
+    fs-extra "^7.0.0"
+    graphql "^14.5.8"
+    graphql-tools "^4.0.6"
+    graphql-upload "^8.1.0"
+    jaeger-client "^3.18.0"
+    js-base64 "^2.5.1"
+    koa "^2.11.0"
+    koa-compose "^4.1.0"
+    koa-compress "^3.0.0"
+    koa-router "^7.4.0"
+    lru-cache "^5.1.1"
+    mime-types "^2.1.12"
+    opentracing "^0.14.4"
+    p-limit "^2.2.0"
+    prom-client "^12.0.0"
+    qs "^6.5.1"
+    querystring "^0.2.0"
+    ramda "^0.26.0"
+    rwlock "^5.0.0"
+    semver "^5.5.1"
+    stats-lite vtex/node-stats-lite#dist
+    tar-fs "^2.0.0"
+    uuid "^3.3.3"
+    xss "^1.0.6"
+
+"@vtex/clients@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@vtex/clients/-/clients-0.2.2.tgz#5848e2c8b159716dd3966a495c8f1d7ca85f7ce8"
+  integrity sha512-L2eXK9GSnlA6oQuLDROa+ipQwByFiDdpqCtlmzfFTpYu8lS+CWZ+Ut87pAssAvZxKSvE8CtNSBEtToC6LPWcJQ==
+  dependencies:
+    "@vtex/api" "^6.36.2"
+
 "@vtex/node-error-report@^0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@vtex/node-error-report/-/node-error-report-0.0.3.tgz#365a2652aeebbd6b51ddc5d64c3c0bc1a326dc71"
@@ -5222,7 +5274,7 @@ static-extend@^0.1.1:
     define-property "^0.2.5"
     object-copy "^0.1.0"
 
-"stats-lite@github:vtex/node-stats-lite#dist":
+"stats-lite@github:vtex/node-stats-lite#dist", stats-lite@vtex/node-stats-lite#dist:
   version "2.2.0"
   resolved "https://codeload.github.com/vtex/node-stats-lite/tar.gz/1b0d39cc41ef7aaecfd541191f877887a2044797"
   dependencies:

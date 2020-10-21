@@ -1,4 +1,5 @@
 import { IOClients } from '@vtex/api'
+import { Catalog } from '@vtex/clients'
 
 import Status from './status'
 
@@ -6,5 +7,9 @@ import Status from './status'
 export class Clients extends IOClients {
   public get status() {
     return this.getOrSet('status', Status)
+  }
+
+  public get catalog() { // this client can be accessed from resolvers or middlewares through ctx.clients.catalog
+    return this.getOrSet('catalog', Catalog)
   }
 }
