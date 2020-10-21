@@ -60,6 +60,8 @@ Project | Description
 
 ⭐ [React App Template](https://github.com/vtex-apps/react-app-template)
 
+⭐ [App Whitelist Form](https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform)
+
 ⭐ [Test Tools](https://github.com/vtex/test-tools/tree/master/examples)
 
 Other References:
