@@ -3,5 +3,5 @@
 # to know more about directives, refer to https://github.com/vtex-apps/graphql-example
 type Query {
     productInfo(slug: String): ProductInfo,
-    productList(topN: Int): ProductList
+    productList(topN: Int): [ProductList]
 }

@@ -1,4 +1,7 @@
 import React from 'react'
+import useProduct from 'vtex.product-context/useProduct'
+// import { useQuery } from 'react-apollo'
+// import productInfo from './queries/productViewCount.graphql'
 
 // Component definition of props
 interface ProductViewCounterProps {
@@ -9,7 +12,12 @@ interface ProductViewCounterProps {
 const ProductViewCounter: StorefrontFunctionComponent<ProductViewCounterProps> = ({
 }) => {
 
-  return (<span>Alive</span>)
+  const { product } = useProduct()
+  console.log(product)
+
+  return (
+    <span>Há 0 pessoas visualizando esse produto. Corra!</span>
+  )
 }
 
 // Content shown in site editor
