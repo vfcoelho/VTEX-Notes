@@ -153,6 +153,14 @@ Command | Description
          "slug":"1307"
       }
       ```
+⭐ Admin Apps
+   - **Menu item definition:**
+      - `navigation.json` defines the menu items that will be added to the admin site menu
+      - `routes.json` defines the component mappings for each menu item defined in the `navigation.json` file
+      - both files should work in tandem with their items being related through the `path` node from each file
+         > the **path** in *navigation.json* should be like `/admin/{{your_path}}`
+
+         > and the **path** in *routes.json* should be like `/admin/app/{{your_path}}`
 
 ## Performance Tips
 
