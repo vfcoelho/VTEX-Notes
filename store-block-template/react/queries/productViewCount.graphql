@@ -1,5 +1,5 @@
 query productViewCount($slug: String){
     productInfo(slug: $slug) {
-        productInfo
+        count
     }
 }

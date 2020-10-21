@@ -74,7 +74,8 @@
     "white-10": "rgba(255,255,255,.1)",
     "white-05": "rgba(255,255,255,.05)",
     "white-025": "rgba(255,255,255,.025)",
-    "white-0125": "rgba(255,255,255,.0125)"
+    "white-0125": "rgba(255,255,255,.0125)",
+    "dark-red": "#E7040F"
   },
   "semanticColors": {
     "background": {

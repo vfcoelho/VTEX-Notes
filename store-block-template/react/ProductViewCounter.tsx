@@ -1,7 +1,7 @@
 import React from 'react'
 import useProduct from 'vtex.product-context/useProduct'
-// import { useQuery } from 'react-apollo'
-// import productInfo from './queries/productViewCount.graphql'
+import { useQuery } from 'react-apollo'
+import productViewCount from './queries/productViewCount.graphql'
 
 // Component definition of props
 interface ProductViewCounterProps {
@@ -13,10 +13,21 @@ const ProductViewCounter: StorefrontFunctionComponent<ProductViewCounterProps> =
 }) => {
 
   const { product } = useProduct()
-  console.log(product)
+  const productId = parseInt(product?.productId)+1000 //the fictional slug produced by https://github.com/vtex-apps/mocked-analytics doesn't have a direct relation with the registered products
+
+  const { data } = useQuery(productViewCount, {
+    variables: {
+      slug: `${productId}`
+    },
+    ssr: false
+  })
+
+  if (!data){
+    return (<span></span>)
+  }
 
   return (
-    <span>Há 0 pessoas visualizando esse produto. Corra!</span>
+    <div className='dark-red'>Há {data?.productInfo?.count} pessoas visualizando esse produto. Corra!</div>
   )
 }
 
