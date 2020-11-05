@@ -69,6 +69,7 @@ Project | Description
 ⭐ [VTEX APIs](https://developers.vtex.com/vtex-developer-docs/reference/get-to-know-vtex-apis)
 
 ⭐ [Test Tools](https://github.com/vtex/test-tools/tree/master/examples)
+ - [Test Example](https://github.com/vtex-apps/condition-layout/blob/master/react/ConditionLayout.test.tsx)
 
 Other References:
 - [Tachyons](https://tachyons.io/)
