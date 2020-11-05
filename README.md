@@ -18,8 +18,10 @@ Project | Description
 --------|------------
 [minimum-boilerplate-theme](./minimum-boilerplate-theme) | The **Store Theme**. It holds the store frontend and examples on how to manipulate native and custom blocks as well as its styles and structures.
 [store-block-template](./store-block-template) | A custom block. It shows how to create a custom component to be later used in a store theme project. It also contains examples of how to consume internal **VTEX APIs**, how to expose configurations in **Site Editor** and how to handle **localization** for VTEX IO apps.
-[service-course-template](./service-course-template) |
+[service-course-template](./service-course-template) | A template project containing examples of a service implementation. It holds examples on consuming VTEX clients for manipulating Master Data registries as well as receiving calls and handling them by implementing clients, resolvers, handlers and clients.
 [events-example](./events-example) | A mock project to generate test events for `service-course-template`.
+[react-app-template](./react-app-template) | A template containing an admin app example. Showing how to add items to admin menu, handle menu search and service integration. 
+[service-example](./service-example) | A service example on how to use VTEX implemented services as dependencies.
 
 ## Useful Links
 
