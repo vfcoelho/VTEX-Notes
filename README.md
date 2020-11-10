@@ -205,6 +205,10 @@ Command | Description
  - ![VTEX Performance Settings](docs/VTEXPerformanceSettings.png)
     - VTEX has exposed many configurations regarding performance tweaks
     - ❗ Test these features before deploying. These features should be used with caution. Since they are in CMS section of the admin, they should be applied to the workspace only.
+      - One can test these configurations by enabling them in a production workspace
+      - To access and test a production workspace, one can set the `workspace` query string variable to the name of one's validation production workspace.
+      - Also, the `v` query string variable can be used to set a different *random* number to invalidate the cache of the workspace
+      - > https://{your domain}.com/?workspace={workspace name}&v={arbitrary number}
  - [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
     - ![Profiler](docs/Profiler.png)
    - The profiler can show what components are taking most time to load.
