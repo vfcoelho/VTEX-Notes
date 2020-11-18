@@ -56,6 +56,8 @@ Project | Description
  - [IO Clients List](https://github.com/vtex/node-vtex-api/blob/ccf4d8f8d3208007c4bfd558baf979df8d825af8/src/clients/IOClients.ts)
  - [VTEX IO Clients Document](https://www.notion.so/How-to-use-and-create-Clients-on-VTEX-IO-1dbd20c928c642d0ba059d5efbe7874b)
 
+⭐ [Store GraphQL](https://github.com/vtex-apps/store-graphql) - REST API GraphQL Abstractions
+
 ⭐ [GraphQL Example](https://github.com/vtex-apps/graphql-example)
 
 ⭐ [GraphQL IDE](https://github.com/vtex-apps/admin-graphql-ide)
