@@ -25,6 +25,8 @@ Project | Description
 
 ## Useful Links
 
+🌟 [Learning Course](https://developers.vtex.com/learning)
+
 ⭐ [Guides](https://developers.vtex.com/docs)
 
 ⭐ [Docs](https://vtex.io/docs)
