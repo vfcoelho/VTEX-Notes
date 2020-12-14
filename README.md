@@ -203,6 +203,9 @@ Command | Description
  - [Web.dev](https://web.dev/)
     - Performance concepts and techniques documentation
     - Each metric in *lighthouse* has a different way to be improved
+    - [Article about speed measurement](https://web.dev/how-to-measure-speed/)
+      - [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+         - Also collects field data
  - ![Browser Performance Tab](docs/BrowserPerformanceTab.png)
     - Use this on a incognito window
     - One can simulate the load of the page by using the performance tab on the browser dev tools. This will generate a load report that can be used to identify how each metric might be impacted during load and what files might be the offenders.
