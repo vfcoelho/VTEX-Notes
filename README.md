@@ -206,6 +206,8 @@ Command | Description
     - [Article about speed measurement](https://web.dev/how-to-measure-speed/)
       - [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
          - Also collects field data
+    - One can add the __disablePixels queryString in order to deactivate VTEX' native GTM implementation. This is useful to measure performence metrics without interference from third party code
+      - > https://{your domain}.com/?__disablePixels
  - ![Browser Performance Tab](docs/BrowserPerformanceTab.png)
     - Use this on a incognito window
     - One can simulate the load of the page by using the performance tab on the browser dev tools. This will generate a load report that can be used to identify how each metric might be impacted during load and what files might be the offenders.
