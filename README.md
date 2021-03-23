@@ -27,6 +27,8 @@ Project | Description
 
 🌟 [Learning Course](https://developers.vtex.com/learning)
 
+⭐ [Store Theme Example](https://storetheme.vtex.com/)
+
 ⭐ [Guides](https://developers.vtex.com/docs)
 
 ⭐ [Docs](https://vtex.io/docs)
@@ -117,6 +119,12 @@ Command | Description
  ```
  https://yourworkspace--youraccount.myvtex.com?__inspect
  ```
+
+⭐ Disable Server Side Rendering by adding `?__disableSSR` at the end of url, like so: 
+ ```
+ https://yourworkspace--youraccount.myvtex.com?__disableSSR
+ ```
+ - This can help debugging to isolate probable root cause of problems that might break page loading entirely.
 
 ⭐ Store Theme
  - > Link `minimum-boilerplate-theme`
