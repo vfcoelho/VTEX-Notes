@@ -227,7 +227,10 @@ Command | Description
       - Also, the `v` query string variable can be used to set a different *random* number to invalidate the cache of the workspace
       - > https://{your domain}.com/?workspace={workspace name}&v={arbitrary number}
  - [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
-    - ![Profiler](docs/Profiler.png)
+   - ![Profiler](docs/Profiler.png)
    - The profiler can show what components are taking most time to load.
    - Gaps mean potential performance opportunities
    - Use this profiler assessment in production workspaces
+ - API Access with [Local Token](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-command-reference#local-token)
+   - Run `vtex local token`
+   - Place the retrieved token in the `VtexIdclientAutCookie` HTTP header to authenticate [API](https://developers.vtex.com/vtex-rest-api/docs/getting-started) calls
